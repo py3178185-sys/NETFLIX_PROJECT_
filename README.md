@@ -1,3 +1,3 @@
 # DATA ANALYSIS OF NETFLIX Movies and TV Shows using SQL 
-![Netflix Logo](net_flix)
+![Netflix Logo](https://brand.netflix.com/en/assets/logos/)
 
