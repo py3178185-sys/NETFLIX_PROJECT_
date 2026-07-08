@@ -24,3 +24,23 @@ C:\Users\HP\Downloads\archive.zip
 * Description
 
 This dataset is used to perform data exploration and answer business-related questions using SQL.
+
+## Schema
+drop table if exists netflix_
+
+	CREATE TABLE netflix_ (
+				show_id	varchar(8),
+				typee	varchar(15),
+				title	varchar(150),
+				director varchar(208),	
+				casts	varchar(1000),
+				country	 varchar(150),
+				date_added	varchar(50),
+				release_year int,	
+				rating	varchar(8),
+				duration varchar(50),
+				listed_in	varchar(100),
+				description varchar(250)
+);			
+
+
