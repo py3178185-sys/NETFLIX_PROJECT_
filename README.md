@@ -27,7 +27,7 @@ This dataset is used to perform data exploration and answer business-related que
 
 ## Schema
 drop table if exists netflix_
-
+ ```sql 
 	CREATE TABLE netflix_ (
 				show_id	varchar(8),
 				typee	varchar(15),
@@ -42,32 +42,29 @@ drop table if exists netflix_
 				listed_in	varchar(100),
 				description varchar(250)
 );			
-
+```
 ## Business problems and solutions
+```sql 
 select * from netflix_;
-
+```
 ## 1--FIND THE TOTAL NUMBERS OF MOVIES VS TV SHOW
-
+ ```sql 
  select typee,count(*) as total_typee 
  from netflix_
  group by typee
-
-
+```
 ## 2. find the director who just make movie 
-
+ ```sql 
   select director,typee 
   from netflix_
   where typee = 'Movie'
-
+```
 ## 3. find the director who just make movie 
 ```sql
  select director,typee 
  from netflix_
  where typee = 'TV Show';
 ```
-
-  select * from netflix_
-
 ## 4-List all countries where Netflix movies are available.
 ```sql
   select UNNEST(STRING_TO_ARRAY(country,',')) 
