@@ -83,10 +83,12 @@ select * from netflix_;
            WHERE ranking =1
    ```
   ## 6- LIST ALL MOVIES RELEASED IN A SPECIFIC YEAR (e.g 2020)
-    ```sql
-	SELECT * FROM netflix_
-    WHERE typee ='Movie' AND release_year = 2020;
-    ```
+  ```sql
+	SELECT *
+	FROM netflix_
+	WHERE typee = 'Movie'
+	  AND release_year = 2020;
+```
 ## 7-find the top 5 countries with the most content on netflix_
 ```sql
 SELECT
